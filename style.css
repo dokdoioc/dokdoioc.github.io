@@ -14,6 +14,11 @@ h1 {
     font-size: 48px;
 }
 
+.subtitle{
+    font-size: 32px;
+    font-weight: bold;
+  }  
+
 .contents1_bold{
     font-size: 18px;
     font-weight: bold;
@@ -26,6 +31,18 @@ h1 {
 .result{
     font-size: 24px;
 }
+
+.live{
+    border:none;
+    width:250px;
+    height:40px;
+    background:red;
+    color: white;
+    padding-left:5px;
+    padding-right:5px;
+    border-radius: 3px;
+}
+
 
 .intro_bg{
     background-image:url("image/head_new.png");
@@ -133,14 +150,14 @@ h1 {
 /*main-text 0*/
 .main_text0{
     width: 100%;
-    height:1000px;
+    height:1400px;
     background: #f1f2f3;
   }
   .main_text0 > h1{
     padding-top:116px;
     text-align: center;
   }
-  .main_text0 > .contents1 {
+  .main_text0 > .subtitle {
     text-align: center;
   }
   
@@ -171,7 +188,7 @@ h1 {
     margin-left: 319px;
     width: 1280px;
     margin-top: 18px;
-    height: 400px;
+    height: 780px;
     background: white;
 
 }
