@@ -1,4 +1,14 @@
 <html>
+    <script>
+        function test(no){
+            for(i=1; i<=3; i++){
+                if(no==i)
+                    document.getElementById('div'+i).style.display='block';
+                else
+                    document.getElementById('div'+i).style.display='none';
+            }
+        }
+    </script>
     <head>
         <title>IOC 독도 집회</title>
         <link href="style.css" rel="stylesheet"
@@ -77,76 +87,156 @@
                 <!--Box end-->
                 <div class="main_text0">
                     <h1>ABOUT</h1>
-                    <div class="subtitle">국제올림픽위원회는 올림픽을 수단으로 벌어지는 일본의 정치적 행위를 묵인 해선 안된다.</div>
-                    <ul class="icons">
-                        <li>
-                            <div class="icon_img">
-                              <img src="image/dokdo.jpg">
-                            </div>
-                            <div class="contents1_bold">독도, 한국의 영토</div>
-                            <div class="contents2">
-                                독도는 명백한 대한민국의 고유영토입니다.
-                            </div>
-                          </li>
-                          <li>
-                            <div class="icon_img">
-                              <img src="image/olympic_logo.png">
-                            </div>
-                            <div class="contents1_bold">올림픽 정신</div>
-                            <div class="contents2">
-                                IOC는 정치적 중립을 유지해야 합니다.
-                            </div>
-                          </li>
-                          <li>
-                            <div class="icon_img">
-                              <img src="image/no_flag.png">
-                            </div>
-                            <div class="contents1_bold">욱일기 허용 철회</div>
-                            <div class="contents2">
-                                제국주의 전범기의 사용
-                            </div>
-                            <div class="contents2">
-                                명백한 전쟁범죄 책임회피 행위입니다.
-                            </div>
-                            <!-- <div class="more">
-                              MORE
-                            </div> -->
-                          </li>
-                                                
-                    </ul>
-                    <div class = "keynote">
-                        <div class = "keynote_contents">                         
-                            <h2>
-                            독일에서 열리는 올림픽에서 알자스-로렌에 대한 영유권을 주장하고, 나치 전범기가 응원에
-                            사용되는것을 상상할수 있는가? <br>
-                            이와 같이 용인되어선 안될 일이 국제올림픽위원회의 무책임한 방치속에 도쿄올림픽에서 벌어지는 중이다. <br>
-                            <br>
-                            <a href="https://olympics.com/tokyo-2020/en/torch/route/">https://olympics.com/tokyo-2020/en/torch/route/</a>  <br>
-                            도쿄올림픽의 성화봉송 경로가 소개된 공식 홈페이지에 대한민국의 영토인 독도를 마치 일본의 영토인 것처럼 표시한 지도가 업로드 되었다.
-                            뿐만 아니라 도쿄올림픽조직위원회는 2 차세계대전에서 사용된 제국주의 전범기를 올림픽
-                            응원에서 사용하도록 허용했다.
-                            이는 올림픽을 수단으로 타국의 영토에 대한 비합리적인 영유권을 주장하고 전쟁범죄에 대한
-                            책임을 회피하는 정치적인 행위임이 명백하다. <br>
-                            <br>
-                            [50 조 2 항: 올림픽 장소, 베뉴 및 기타 구역에서 어떠한 형태의 시위나 정치적 종교적 혹은
-                            인종적 선전도 허용되지 않는다.]<br>
-                            올림픽 헌장에서는 올림픽을 국가의 정치적인 선전의 수단으로 사용하는 것을 금지하고
-                            있다. <br>
-                            그러나 도쿄올림픽을 두고 일어나는 일본정부의 행위는 올림픽 헌장에 명시된 올림픽
-                            정신을 정면으로 위배하는 행위이다.<br>
-                            국제올림픽위원회는 일본의 올림픽을 정치적으로 이용하는 행태를 저지함으로서 적극적으로
-                            올림픽 정신을 수호하는 역할을 다하여야 한다.<br>
-                            <br>
-                            지난 2018 평창올림픽에서는 남북단일팀 한반도기에 표시된 독도에 대해 삭제를 요구한
-                            일본의 비합리적인 지적에 국제올림픽위원회는 지도에 독도를 표시한 것을 “정치적 행위”로
-                            규정하고 삭제를 권고했었으며, 당시 대한한국 정부는 올림픽 정신을 지키기 위해 기꺼이
-                            국제올림픽위원회 측의 요구를 수용했다.<br>
-                            <br>
-                            왜 지금의 국제올림픽위원회는 올림픽 정신을 지키는 행동을 하지 못하는가?
-                            </h2>
-                        </div>
+                    <div class = "language"> 
+                        <select name="select" class="lang" onchange='test(this.value)'>
+                            <option value="1">Language (한국어)</option>
+                            <option value="2">English</option>
+                            <option value="3 ">Français</option>
+                        </select>
+                        <div style='display:block' id='div1'>
 
+                            <div class="subtitle">국제올림픽위원회는 올림픽을 수단으로 벌어지는 일본의 정치적 행위를 묵인 해선 안된다.</div>
+                            <ul class="icons">
+                                <li>
+                                    <div class="icon_img">
+                                      <img src="image/dokdo.jpg">
+                                    </div>
+                                    <div class="contents1_bold">독도, 한국의 영토</div>
+                                    <div class="contents2">
+                                        독도는 명백한 대한민국의 고유영토입니다.
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="icon_img">
+                                      <img src="image/olympic_logo.png">
+                                    </div>
+                                    <div class="contents1_bold">올림픽 정신</div>
+                                    <div class="contents2">
+                                        IOC는 정치적 중립을 유지해야 합니다.
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="icon_img">
+                                      <img src="image/no_flag.png">
+                                    </div>
+                                    <div class="contents1_bold">욱일기 허용 철회</div>
+                                    <div class="contents2">
+                                        제국주의 전범기의 사용
+                                    </div>
+                                    <div class="contents2">
+                                        명백한 전쟁범죄 책임회피 행위입니다.
+                                    </div>
+                                    <!-- <div class="more">
+                                      MORE
+                                    </div> -->
+                                  </li>
+                                                        
+                            </ul>
+                            <div class = "keynote">
+                                <div class = "keynote_contents">                         
+                                    <h2>
+                                    독일에서 열리는 올림픽에서 알자스-로렌에 대한 영유권을 주장하고, 나치 전범기가 응원에
+                                    사용되는것을 상상할수 있는가? <br>
+                                    이와 같이 용인되어선 안될 일이 국제올림픽위원회의 무책임한 방치속에 도쿄올림픽에서 벌어지는 중이다. <br>
+                                    <br>
+                                    <a href="https://olympics.com/tokyo-2020/en/torch/route/">https://olympics.com/tokyo-2020/en/torch/route/</a>  <br>
+                                    도쿄올림픽의 성화봉송 경로가 소개된 공식 홈페이지에 대한민국의 영토인 독도를 마치 일본의 영토인 것처럼 표시한 지도가 업로드 되었다.
+                                    뿐만 아니라 도쿄올림픽조직위원회는 2 차세계대전에서 사용된 제국주의 전범기를 올림픽
+                                    응원에서 사용하도록 허용했다.
+                                    이는 올림픽을 수단으로 타국의 영토에 대한 비합리적인 영유권을 주장하고 전쟁범죄에 대한
+                                    책임을 회피하는 정치적인 행위임이 명백하다. <br>
+                                    <br>
+                                    [50 조 2 항: 올림픽 장소, 베뉴 및 기타 구역에서 어떠한 형태의 시위나 정치적 종교적 혹은
+                                    인종적 선전도 허용되지 않는다.]<br>
+                                    올림픽 헌장에서는 올림픽을 국가의 정치적인 선전의 수단으로 사용하는 것을 금지하고
+                                    있다. <br>
+                                    그러나 도쿄올림픽을 두고 일어나는 일본정부의 행위는 올림픽 헌장에 명시된 올림픽
+                                    정신을 정면으로 위배하는 행위이다.<br>
+                                    국제올림픽위원회는 일본의 올림픽을 정치적으로 이용하는 행태를 저지함으로서 적극적으로
+                                    올림픽 정신을 수호하는 역할을 다하여야 한다.<br>
+                                    <br>
+                                    지난 2018 평창올림픽에서는 남북단일팀 한반도기에 표시된 독도에 대해 삭제를 요구한
+                                    일본의 비합리적인 지적에 국제올림픽위원회는 지도에 독도를 표시한 것을 “정치적 행위”로
+                                    규정하고 삭제를 권고했었으며, 당시 대한한국 정부는 올림픽 정신을 지키기 위해 기꺼이
+                                    국제올림픽위원회 측의 요구를 수용했다.<br>
+                                    <br>
+                                    왜 지금의 국제올림픽위원회는 올림픽 정신을 지키는 행동을 하지 못하는가?
+                                    </h2>
+                                </div>
+        
+                            </div>
+                            </div>
+                            <div style='display:none' id='div2'>
+
+                            <div class="subtitle">The IOC must not condone Japan's political actions taking place at the Olympic Games.</div>
+                            <ul class="icons">
+                                <li>
+                                    <div class="icon_img">
+                                      <img src="image/dokdo.jpg">
+                                    </div>
+                                    <div class="contents1_bold">Dokdo, Korean Territory</div>
+                                    <div class="contents2">
+                                        Dokdo is an apparent Korean territory.
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="icon_img">
+                                      <img src="image/olympic_logo.png">
+                                    </div>
+                                    <div class="contents1_bold">Olympic Spirit</div>
+                                    <div class="contents2">
+                                        IOC must keep its political nutrality.
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="icon_img">
+                                      <img src="image/no_flag.png">
+                                    </div>
+                                    <div class="contents1_bold">No Japanese Imperial Army Flag</div>
+                                    <div class="contents2">
+                                        Permission of this flag is interpreted as
+                                    </div>
+                                    <div class="contents2">
+                                        ingnoring Japanese responsibility of the WW2
+                                    </div>
+                                    <!-- <div class="more">
+                                      MORE
+                                    </div> -->
+                                  </li>
+                                                        
+                            </ul>
+                            <div class = "keynote">
+                                <div class = "keynote_contents">                         
+                                    <h2>
+                                    Can you imagine that Germany is claiming sovereignty over Alsace-Lorraine of France territory? Can you imagine using the Nazi’s war criminal flag to cheer at the Olympics? Such unacceptable events are happening at the Tokyo Olympics under the eyes of the International Olympic Committee (IOC).
+                                    <br>
+                                    <a href="https://olympics.com/tokyo-2020/en/torch/route/">https://olympics.com/tokyo-2020/en/torch/route/</a>  
+                                    <br>
+                                    A map showing Dokdo, the territory of South Korea, was uploaded on the official website of the Tokyo Olympics as if it was Japanese territory. 
+                                    <br>
+                                     In addition, the Tokyo Olympic Organizing Committee allowed the display of the Japanese imperial army flag (Japan’s fascist symbol, so called Rising sun flag) used during World War II at the Olympic.
+                                     It is clear that this is a political act of claiming unreasonable sovereignty over other countries' territories and evading responsibility for war crimes through the Olympic Games.
+                                     <br>
+                                     [Olympic Charter 50(2): No kind of demonstration or political, religious or racial propaganda is permitted in any Olympic sites, venues or other areas.]
+                                     <br>
+                                     The Olympic Charter forbids the use of the Olympics as a means of national political propaganda. However, the actions taken by the Japanese government over the Tokyo Olympics are in direct violation of the spirit of the Olympics stipulated in the Olympic Charter.
+                                     <br>
+                                     The IOC should actively play its role in protecting the spirit of the Olympics by preventing Japan's political act at the Olympics.
+                                     <br>
+                                     At the 2018 Pyeongchang Olympics, the Japanese government complained to IOC about Dokdo on the map of South Korea. Then, the IOC considered that putting Dokdo on the map of South Korea was a political act and recommended the deletion of Dokdo. The government of South Korea accepted the demands from the IOC in order to uphold the Olympic spirit.
+                                     <br>
+                                     Thus, we as Koreans, cannot understand why the IOC is closing eyes on this political matter happening in the Tokyo Olympic.
+                                    <br>
+                                    </h2>
+                                </div>
+        
+                            </div>
+                            </div>
+                            <div style='display:none' id='div3'>
+                            테스트3입니다.
+                        </div>
                     </div>
+
                     </div>
 
                 
