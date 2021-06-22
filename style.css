@@ -158,7 +158,7 @@ h1 {
     text-align: center;
   }
   .main_text0 > .subtitle {
-    text-align: center;
+    text-align:center;
   }
 
   .language{
@@ -211,6 +211,7 @@ h1 {
 
 .keynote > .keynote_contents {
     padding: 40px;
+    text-align: justify;
     
 }
 
